@@ -1,0 +1,61 @@
+
+.pogodnosti-page {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.pogodnosti-page h1 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #007BFF;
+}
+
+.cloud-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.cloud-box {
+  background: #fff;
+  padding: 30px 25px;
+  border-radius: 40px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+}
+
+.cloud-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+}
+
+.cloud-box h2 {
+  margin-bottom: 10px;
+  color: #333;
+  font-size: 1.3rem;
+}
+
+.cloud-box p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Mobilna prilagodba */
+@media (max-width: 600px) {
+  .pogodnosti-page h1 {
+    font-size: 2rem;
+  }
+
+  .cloud-box h2 {
+    font-size: 1.1rem;
+  }
+
+  .cloud-box p {
+    font-size: 0.95rem;
+  }
+}

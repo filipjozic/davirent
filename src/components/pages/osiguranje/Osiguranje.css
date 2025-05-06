@@ -1,0 +1,45 @@
+.osiguranje-page {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .osiguranje-page h1 {
+    font-size: 2.3rem;
+    margin-bottom: 40px;
+    color: #007BFF;
+  }
+  
+  .osiguranje-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+  }
+  
+  .osiguranje-card {
+    background-color: #fff;
+    padding: 25px 20px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    text-align: left;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .osiguranje-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  }
+  
+  .osiguranje-card h2 {
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+    color: #333;
+  }
+  
+  .osiguranje-card p {
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.6;
+  }

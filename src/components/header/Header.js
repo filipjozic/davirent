@@ -1,16 +1,31 @@
-import React, { useState } from 'react';
+
+import React, { useState, useEffect, useRef } from 'react';
 import { NavLink } from 'react-router-dom';
 import './Header.css';
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const navRef = useRef();
 
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (menuOpen && navRef.current && !navRef.current.contains(e.target)) {
+        setMenuOpen(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [menuOpen]);
+
   return (
-    <header className="navbar">
+    <header className="navbar" ref={navRef}>
       <NavLink to="/" className="logo" onClick={() => setMenuOpen(false)}>
-        DAVI Rent a Car
+        <img src="/images/logo.png" alt="DAVI Rent a Car" className="logo-img" />
       </NavLink>
       <div className="menu-icon" onClick={toggleMenu}>
         ☰
