@@ -1,0 +1,89 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007BFF;
+    padding: 1rem 2rem;
+    color: white;
+    position: relative;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .menu-icon {
+    font-size: 1.8rem;
+    cursor: pointer;
+    display: none; /* sakriveno na desktopu */
+  }
+  
+  .nav {
+    display: flex;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .nav-links a:hover {
+    color: #cce5ff;
+  }
+  
+  /* === Mobilna verzija === */
+  @media (max-width: 768px) {
+    .menu-icon {
+      display: block;
+    }
+  
+    .nav {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      background-color: #007BFF;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      z-index: 10;
+    }
+  
+    .nav.open {
+      display: flex;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      gap: 10px;
+      padding: 1rem;
+    }
+  
+    .nav-links li {
+      text-align: center;
+    }
+  }
+  .nav-links .active {
+    text-decoration: underline;
+    color: #FFD700; /* zlatna, primjer */
+  }
+
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+  }
+  .logo:hover {
+    text-decoration: underline;
+  }
