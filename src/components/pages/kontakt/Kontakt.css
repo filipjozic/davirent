@@ -1,0 +1,97 @@
+
+.kontakt-page {
+  padding: 60px 20px;
+  max-width: 700px;
+  margin: auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.kontakt-page h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: #007BFF;
+  margin-bottom: 30px;
+}
+
+.kontakt-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+}
+
+.kontakt-form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  color: #444;
+}
+
+.kontakt-form input,
+.kontakt-form textarea {
+  margin-top: 8px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.kontakt-form button {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.kontakt-form button:hover {
+  background-color: #0056b3;
+}
+
+.success-message {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+  padding: 15px;
+  margin: 20px auto;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 1rem;
+  text-align: center;
+  max-width: 600px;
+}
+
+.whatsapp-link {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.whatsapp-link a {
+  color: #25D366;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 600px) {
+  .kontakt-page h1 {
+    font-size: 1.6rem;
+  }
+
+  .kontakt-form {
+    padding: 20px;
+  }
+
+  .kontakt-form input,
+  .kontakt-form textarea {
+    font-size: 0.95rem;
+  }
+}
